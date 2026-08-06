@@ -15,7 +15,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY geo_agent.py server.py ./
+COPY geo_agent.py server.py api_keys.py mcp_tools.py ./
 
 EXPOSE 8000
 
